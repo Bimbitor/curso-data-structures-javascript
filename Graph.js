@@ -7,7 +7,7 @@ class Graph {
         this.adjacentList[node] = [];
         this.nodes++;
     }
-    addConex(node1, node2) {
+    addEdge(node1, node2) {
         this.adjacentList[node1].push(node2);
         this.adjacentList[node2].push(node1);
     }
@@ -28,12 +28,12 @@ myGraph.addVertice(6);
 myGraph.addVertice(8);
 
 // Conexiones
-myGraph.addConex(8,4)
-myGraph.addConex(4,1)
-myGraph.addConex(1,3)
-myGraph.addConex(1,6)
-myGraph.addConex(3,6)
-myGraph.addConex(3,5)
-myGraph.addConex(5,4)
+myGraph.addEdge(8,4)
+myGraph.addEdge(4,1)
+myGraph.addEdge(1,3)
+myGraph.addEdge(1,6)
+myGraph.addEdge(3,6)
+myGraph.addEdge(3,5)
+myGraph.addEdge(5,4)
 
 console.log(myGraph.check());
